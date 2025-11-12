@@ -26,17 +26,6 @@ def send_mail():
     message["From"] = sender_email
     message["To"] = receiver_email
 
-    # Plain text version
-    text = """\
-Hi there,
-
-This is a test email sent from the Python SMTP script.
-If you're seeing this, the SMTP connection and credentials are working!
-
-Regards,
-Panado Bot
-"""
-
     # HTML version
     html = """\
 <html>
@@ -49,9 +38,6 @@ Panado Bot
 </body>
 </html>
 """
-
-    # Attach both versions
-    message.attach(MIMEText(text, "plain"))
     message.attach(MIMEText(html, "html"))
 
     # Send the email securely

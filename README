@@ -1,0 +1,6 @@
+### Basic email sending program using SMTP
+
+Replace the SMTP credentials with your own.
+
+Test body:
+![Picture of received email](image-1.png)
